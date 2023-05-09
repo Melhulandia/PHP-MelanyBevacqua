@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proyecto</title>
+        <!--cargar estilos propios de manera externa-->
+        <link rel="stylesheet" href="./css/estilos.css">
+      
+    </head>
+   
+    <body class="body">
+     
+        <header>
+            <div>
+                <!--rutas absolutas y rutas relativas -->
+                <img src="./assets/img/codoacodo.png" alt="Logo de codo a codo">
+                <h2>Conf Bs.As.</h2>
+            </div>
+           
+            <nav class="navegacion">
+                <!-- para la proxima clase vamos agrupar las anclas dentro de una lista desordenada-->
+                <ul class="listaNav">
+                    <li class="itemLista"><a href="#conferencia">La conferencia </a></li>
+                    <li class="itemLista"><a href="#oradores">Los oradores</a></li>
+                    <li class="itemLista"><a href="#lugarFecha">El Lugar y la Fecha</a></li>
+                    <li class="itemLista"><a href="#formulario">Conviertete en Orador</a></li>
+                    <li class="itemLista"><a href="./pages/comprar_tickets.html">Comprar Tickets</a></li>
+                </ul>
+                
+            </nav>
+            <!--contenedor de la imagen de ex aguas argentinas(que la vamos a poner de fondo desde css)-->
+            <section id="conferencia">
+                <h1>Conferencia Bs.As.</h1>
+                <p class="textoConferencia">Lorem ipsum, dolor sit amet consectetur adipisicing elit. <span>Tenetur</span> cupiditate et ea totam     assumenda consectetur dolor itaque delectus, quos aliquam! Quae, animi quasi. Deleniti consequuntur quibusdam qui vero, perspiciatis soluta!
+                Hic error voluptatum sequi magnam rem quisquam? Veritatis at debitis nam illum, deserunt molestiae.</p>
+                <button>Quiero ser orador</button>
+                <button>Comprar Tickets</button>
+            </section>
+
+        </header>
+         <!--esta es la etiqueta semantica del contenido principal de mi pagina-->
+        <main>
+           <section id="oradores">
+            <!--ETIQUETA CONTENEDORA EN LINEA, HERMANA DEL DIV QUE ES SPAN-->
+            
+              <h2><span>CONOCE A LOS</span><br> ORADORES</h2>
+              <div class="card">
+                <img src="./assets/img/steve.jpg" alt="Imagen de Steve Jobs">
+                <h5>JavaScript</h5>
+                <h5>React</h5>
+                <h3>Steve Jobs</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta nulla consectetur illum voluptatibus voluptatem illo alias dolorem voluptatum, non aliquid nisi fugiat vitae maxime quas est maiores dolor pariatur et?</p>
+              </div>
+              <div class="card">
+                <img src="./assets/img/bill.jpg" alt="Imagen de Bill Gates">
+                <h5>JavaScript</h5>
+                <h5>React</h5>
+                <h3>Bill Gates</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta nulla consectetur illum voluptatibus voluptatem illo alias dolorem voluptatum, non aliquid nisi fugiat vitae maxime quas est maiores dolor pariatur et?</p>
+              </div>
+              <div class="card">
+                <img src="./assets/img/ada.jpeg" alt="Imagen de Ada Lovelace">
+                <h5>JavaScript</h5>
+                <h5>React</h5>
+                <h3>Ada Lovelace</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta nulla consectetur illum voluptatibus voluptatem illo alias dolorem voluptatum, non aliquid nisi fugiat vitae maxime quas est maiores dolor pariatur et?</p>
+              </div>
+             
+              
+           </section>
+           <section id="lugarFecha">
+                <div>
+                    <img src="./assets/img/honolulu.jpg" alt="imagen pantalla dividida">
+                </div>
+                <div>
+                    <h2>Buenos Aires - Octubre</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto unde qui dolore voluptas quasi ad facere eum, beatae assumenda quos totam suscipit placeat voluptates officia repudiandae? Eos reiciendis soluta sed.</p>
+                    <button>Conoce Más</button>
+                    <a href="">Conocé Más</a>
+                </div>
+            </section>
+            <section id="formulario">
+                <h2><span>CONVIERTETE EN UN </span><br> ORADOR</h2>
+                <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus assumenda!</h3>
+                <form>
+                    <div>
+                        <input type="text" placeholder="Nombre" required>
+                        <input type="text" placeholder="Apellido" required>
+                    </div>
+                    <div>
+                        <input type="email" placeholder="ejemplo@dominio.com">
+                        <input type="password" placeholder="Contraseña">
+                    </div>
+                    <div>
+                        <textarea name="" id="" cols="44" rows="6" placeholder="Sobre que quieres hablar?" required></textarea>
+                    </div>
+                    <p>Recuerda incluir un titulo para tu charla.</p>
+                    <div>
+                        <input type="submit" value="Enviar Formulario">
+                        <input type="reset" value="Limpiar Formulario">
+                    </div>
+
+                </form>
+            </section>
+            
+        </main>
+       
+         <!--esta es la etiqueta semantica del pie de pagina-->
+        <footer>
+             <!-- hacer el footer para el miercoles-->
+             <!-- etiqueta semantica del pie de página-->
+            <div>
+              
+                <a href="">Preguntas frecuentes</a>
+                <a href="">Contáctanos</a>
+                <a href="">Prensa</a>
+                <a href="">Conferencias</a>
+                <a href="">Terminos y condiciones</a>
+                <a href="">privacidad</a>
+                <a href="">Estudiantes</a>
+            
+            </div>
+        </footer>
+    </body>
+</html>

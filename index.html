@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ProyectoPHP</title>
+    <!--kit de fontawesome-->
+    <script src="https://kit.fontawesome.com/21634b49f8.js" crossorigin="anonymous"></script>
+   <!--hoja de stylos propia-se linkea la pagina de estilos al html usando "link"-->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <!--favicon-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- <style>
+        /*CSS Consejos: dentro es sintaxis propia de css//// en los emails se ponen etiquetas style en el head para enviar emails ---para sitios web no conviene utilizar el style en el hmtl*/
+    </style>-->
+</head>
+<body class="body">
+    <header class="header">
+        <div class="contenedorNav ">
+            <div class="contenedorLogo">
+                <a href="https://agenciadeaprendizaje.bue.edu.ar/codo-a-codo/"> <img src="./assets/img/codoacodo.png"
+                        alt="Logo de Codo a Codo"></a>
+                <!--ruta absolutas (con link completo) y rutas relativas (img entre carpetas)-->
+                <h2>Conf. Bs. As.</h2> <!--etiqueta elemento en bloque, ocupa todo una linea-->
+            </div><!--aqui se pueden colocar etiquetas en bloque que ocupe una barra de % de la pag.-->
+            <nav class="navegacion"><!--nav siempre va a tener dentro una navegacion-->
+                <ul class="listaNav"><!--listas desordenadas/mapas/(anclas)--><!--haciendo click en a*4 crea el atajo-->
+                    <li class="itemLista"><a class="linkNav colorFuente" href="#conferencia">La conferencia </a></li>
+                    <li class="itemLista"><a class="linkNav" href="#oradores">Los oradores</a></li>
+                    <li class="itemLista"><a class="linkNav" href="#lugarFecha">El Lugar y la Fecha</a></li>
+                    <li class="itemLista"><a class="linkNav" href="#formulario">Conviertete en Orador</a></li>
+                    <li class="itemLista"><a class="linkNav text-bg-primary" href="./pages/comprar_tickets.html">ComprarTickets</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!--contenedor para una img de fondo-->
+        <section class="contenedorConferencia" id="conferencia"> <!--id es un identificador que no se puede repetir-->
+            <div class="hijoConferencia">
+                <h1>Conf Bs As</h1>
+                <p class="textoConferencia">Bs As llega por primera vez a Argentina. Un evento para compartir con
+                    nuestra
+                    comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven
+                    a
+                    conocer a miembros del evento, a otros estudianntes de Codo a Codo y los oradores de primer nivel
+                    que
+                    tenemos para tí. Te esperamos!</p>
+                <div class="btnConferencia">
+                    <a class="btnConferencia1" href="">Quiero ser orador</a>
+                    <a class="btnConferencia2" href="">Comprar Tickets</a>
+                </div>
+            </div>
+        </section>
+    </header><!--cabecera de la pagina, contenido principal-->
+    <main> <!--contenido principal va en el main-->
+        <section id="oradores" class="sectionOradores">
+            <h2><span class="spanOradores">CONOCE A LOS</span><br> ORADORES</h2>
+            <div class="box__card"> <!--padreCards-->
+                <div class="card"> <!--hijoCards-->
+                    <img src="./assets/img/steve.jpg" alt="Imagen de Steve Jobs">
+                    <div class="cardBody">  
+                            <div class="card_h5">
+                                <h5 class="btn_js">JavaScript</h5>
+                                <h5 class="btn_React">React</h5>
+                            </div>
+                            <h3>Steve Jobs</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta nulla consectetur illum
+                            voluptatibus voluptatem illo alias dolorem voluptatum, non aliquid nisi fugiat vitae maxime
+                            quas est maiores dolor pariatur et?</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/bill.jpg" alt="Imagen de Bill Gates">
+                    <div class="cardBody">
+                        <div class="card_h5">
+                            <h5 class="btn_js">JavaScript</h5>
+                            <h5 class="btn_React">React</h5>
+                        </div>
+                        <h3>Bill Gates</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta nulla consectetur illum
+                            voluptatibus voluptatem illo alias dolorem voluptatum, non aliquid nisi fugiat vitae maxime
+                            quas
+                            est maiores dolor pariatur et?</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/ada.jpeg" alt="Imagen de Ada Lovelace">
+                    <div class="cardBody">
+
+                        <div class="card_h5">
+                            <h5 class="btn_negocios">Negocios</h5>
+                            <h5 class="btn_starup">StarUps</h5>
+                        </div>
+                        <h3>Ada Lovelace</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta nulla consectetur illum
+                            voluptatibus voluptatem illo alias dolorem voluptatum, non aliquid nisi fugiat vitae maxime
+                            quas
+                            est maiores dolor pariatur et?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="lugarFecha">
+            <div class="box_card_honolulu">
+                <img src="./assets/img/honolulu.jpg" alt="Playa Honolulu">
+                <div class="box_card_honolulu1">
+                    <h2>Bs As - Octubre</h2>
+                    <p> Buenos Aires es la provincia y localidad más grande del estado de Argentina,
+                        en los Estados Unidos Honolulu es la más sureña de entre las principales
+                        ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área
+                        urbana en la costa sureste de la Isla de Oahu, la ciudad-condado de Honolulu
+                        ha formado una ciudad consolidada que cubre toda la ciudad (aproximadamente 600 km2 de superficie).</p><br>
+                    <a class="btnConferencia1" href="https://es.wikipedia.org/wiki/Honolulu">Conocé más</a>
+                </div>
+            </div>
+        </section>
+        <section class="formulario" id="formulario">
+            <div class="formTitle">
+                <h2><span>CONVIERTETE EN UN</span><br>ORADOR</h2><br>
+                <p>Anotate como orador para dar una charla ignite.Cuentanos de que quieres hablar!</p><br>
+            </div>
+            <form class="card_form">
+                <!--sin el form la informacion no va a viajar a ningun lado, si o si debe estar el form para redireccionar los datos que quiero recibir-->
+                <div class="card_form1">
+                    <input type="text" placeholder="Nombre"> <!--placeholder es para que el text se vea en el form-->
+                    <input type="text" placeholder="Apellido">
+                </div>
+                <textarea name="" id="" cols="48" rows="10" placeholder="Sobre qué quieres hablar?" required></textarea>
+                <div class="textarea_form_p">
+                    <p>Recuerde incluir un título para tu charla</p>
+                </div>
+                <div class="card_form1">
+                    <input type="submit" value="Enviar Formulario" class="btnConferencia2">
+                    <input type="reset" value="Limpiar Formulario" class="btnConferencia2">
+                </div>
+            </form>
+        </section>
+    </main>
+    <!--esta es la etiqueta semantica del pie de pagina-->
+    <footer>
+        <div class="page__footer">
+            <div class="box__footer">
+                <h4> Preguntas<br>Frecuentes</h4>
+                <a href="la URL"></a>
+            </div>
+            <div class="box__footer">
+                <h4>Contáctenos</h4>
+            </div>
+            <div class="box__footer">
+                <h4>Prensa</h4>
+            </div>
+            <div class="box__footer">
+                <h4>Conferencias</h4>
+            </div>
+            <div class="box__footer">
+                <h4>Términos y <br> condiciones</h4>
+            </div>
+            <div class="box__footer">
+                <h4>Privacidad</h4>
+            </div>
+            <div class="box__footer">
+                <h4>Estudiantes</h4>
+            </div>
+            <a href="https://api.whatsapp.com/send?phone=5491150500147&amp;&amp;text=Coronavirus&amp;&amp;source=&amp;&amp;data="><i class="fa-brands fa-whatsapp fa-sg icon"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>
