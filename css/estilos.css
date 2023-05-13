@@ -387,9 +387,9 @@ footer {
     }
 
     .btnConferencia {
-        padding: 3rem;
+        margin-bottom:15 px auto;
+        padding: 4rem;
         font-size: small;
-        margin-botton:20%;
     }
 
     /*ORADORES*/
